@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>衡序案板 · 智能健康案板设计</title>
+  <style>
+    :root{--ink:#172326;--muted:#64757a;--teal:#00545a;--orange:#ee8b35;--bg:#eef7f6;--wine:#512c3a}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);font-family:Arial,"Microsoft YaHei",sans-serif;background:radial-gradient(circle at 10% 10%,#dff2ed,transparent 30%),radial-gradient(circle at 90% 18%,#f7dfc6,transparent 28%),linear-gradient(135deg,#eef8f6,#e8f1f2 52%,#f8f0e7)}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(120deg,transparent 25%,rgba(255,255,255,.4),transparent 70%);opacity:.45;animation:flow 15s ease-in-out infinite alternate}
+    @keyframes flow{to{transform:translateX(8%)}}
+    .page{position:relative;width:min(1180px,calc(100% - 36px));margin:auto;padding:34px 0 80px}
+    .back{color:var(--ink);font-size:13px;font-weight:700;text-decoration:none}
+    .glass{border:1px solid rgba(255,255,255,.84);border-radius:30px;background:rgba(255,255,255,.55);box-shadow:0 25px 70px rgba(37,91,90,.13),inset 0 1px 0 rgba(255,255,255,.85);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+    .hero{display:grid;grid-template-columns:.86fr 1.24fr;gap:42px;align-items:center;margin-top:30px;padding:42px}
+    .eyebrow,.number{color:var(--teal);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    h1{margin:18px 0;font-size:clamp(48px,7vw,88px);font-weight:500;line-height:.9;letter-spacing:-.07em}
+    h1 small{display:block;margin-top:15px;color:var(--teal);font-size:.27em;letter-spacing:.03em}
+    .lead{max-width:430px;color:var(--muted);font-size:15px;line-height:1.9}
+    .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.chip{padding:9px 13px;border:1px solid rgba(0,84,90,.18);border-radius:999px;background:rgba(255,255,255,.48);color:var(--teal);font-size:11px}
+    .cover{overflow:hidden;border-radius:22px;box-shadow:0 22px 50px rgba(21,40,43,.2)}.cover img{display:block;width:100%;aspect-ratio:1.42/1;object-fit:cover}
+    .section{margin-top:28px;padding:34px}.section-head{display:grid;grid-template-columns:155px 1fr;gap:30px;margin-bottom:26px}h2{margin:0;font-size:clamp(28px,4vw,50px);font-weight:500;letter-spacing:-.05em}.section-copy{max-width:740px;margin:11px 0 0;color:var(--muted);font-size:14px;line-height:1.85}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{padding:22px;border-radius:21px;background:rgba(0,84,90,.92);color:#fff;min-height:140px}.stat b{display:block;color:#ffd39f;font-size:27px;font-weight:500;margin-bottom:10px}.stat span{font-size:12px;line-height:1.7;opacity:.84}
+    figure{margin:0;overflow:hidden;border-radius:22px;background:rgba(255,255,255,.45)}figure img{display:block;width:100%;height:auto}figcaption{padding:13px 16px;color:var(--muted);font-size:11px}
+    .feature{border:1px solid rgba(255,255,255,.72)}.feature img{max-height:850px;object-fit:contain;background:#fff}
+    .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.gallery .wide{grid-column:1/-1}.gallery .wide img{aspect-ratio:1.25/1;object-fit:cover}.gallery figure:not(.wide) img{aspect-ratio:1.25/1;object-fit:cover}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}.two figure img{aspect-ratio:.71;object-fit:cover}
+    .footer{display:flex;justify-content:space-between;gap:20px;padding:25px 4px 0;color:var(--muted);font-size:11px}
+    @media(max-width:760px){.page{width:min(100% - 22px,1180px);padding-top:24px}.hero{grid-template-columns:1fr;padding:25px;gap:27px}h1{font-size:56px}.section{padding:24px}.section-head{grid-template-columns:1fr;gap:8px}.stats,.gallery,.two{grid-template-columns:1fr}.gallery .wide{grid-column:auto}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}body:before{animation:none}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="../index.html">← 返回作品集</a>
+    <section class="hero glass">
+      <div>
+        <div class="eyebrow">产品设计 / 智能家居 / 2026</div>
+        <h1>衡序案板<small>Smart Health Cutting Board</small></h1>
+        <p class="lead">一款将传统案板、称重传感、营养分析与健康管理结合的智能厨房工具，让每一次备菜都更精准、更安心。</p>
+        <div class="chips"><span class="chip">健康烹饪</span><span class="chip">精准控制</span><span class="chip">科学高效</span><span class="chip">便捷管理</span></div>
+      </div>
+      <figure class="cover"><img src="../images/balance-board/render-01.png" alt="衡序案板智能健康案板主视觉"></figure>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">01 / Product idea</div><div><h2>把厨房里的“凭感觉”变成可理解的数据</h2><p class="section-copy">案板保留熟悉的切配姿态，同时加入重量、尺寸与菜谱信息反馈。用户可以在切菜过程中获得更清晰的营养提示，降低健康饮食的门槛。</p></div></div>
+      <div class="stats"><article class="stat"><b>健康烹饪</b><span>记录食材与营养信息，建立更有依据的饮食习惯。</span></article><article class="stat"><b>精准控制</b><span>通过传感器与刻度辅助分量控制，减少估算误差。</span></article><article class="stat"><b>科学高效</b><span>菜谱与备菜流程联动，帮助用户更快完成一餐。</span></article><article class="stat"><b>便捷管理</b><span>连接应用，沉淀食材记录并形成可回看的健康数据。</span></article></div>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">02 / Design system</div><div><h2>完整设计展示板</h2><p class="section-copy">从灵感来源、功能细节和产品尺寸，到 APP 交互与使用场景，形成一套完整的产品说明系统。</p></div></div>
+      <figure class="feature"><img src="../images/balance-board/overview.png" alt="衡序案板完整设计展示板" loading="lazy"><figcaption>衡序案板 · 产品功能、尺寸、APP 交互与使用场景</figcaption></figure>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">03 / Process</div><div><h2>结构、功能与交互展开</h2><p class="section-copy">通过不同视角的渲染图和过程画板，展示案板的升降屏、隐藏式收纳、可拆卸案板与称重区域。</p></div></div>
+      <div class="two"><figure><img src="../images/balance-board/process-01.png" alt="衡序案板设计过程画板一" loading="lazy"><figcaption>功能框架与外观方向</figcaption></figure><figure><img src="../images/balance-board/process-02.png" alt="衡序案板设计过程画板二" loading="lazy"><figcaption>使用场景与交互推演</figcaption></figure></div>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">04 / Product renders</div><div><h2>产品形态与细节</h2><p class="section-copy">多角度呈现产品的结构关系、材质层次与屏幕使用状态，突出“稳、准、易清洁”的设计语言。</p></div></div>
+      <div class="gallery">
+        <figure class="wide"><img src="../images/balance-board/render-01.png" alt="衡序案板正面产品渲染" loading="lazy"><figcaption>正面形态 · 屏幕、案板与底座的层叠关系</figcaption></figure>
+        <figure><img src="../images/balance-board/render-02.png" alt="衡序案板产品侧面渲染" loading="lazy"><figcaption>侧面结构 · 支撑与收纳</figcaption></figure>
+        <figure><img src="../images/balance-board/render-03.png" alt="衡序案板产品三视图渲染" loading="lazy"><figcaption>结构视角 · 折叠与支撑逻辑</figcaption></figure>
+        <figure><img src="../images/balance-board/render-04.png" alt="衡序案板产品细节渲染" loading="lazy"><figcaption>细节展示 · 传感区域与表面纹理</figcaption></figure>
+        <figure><img src="../images/balance-board/render-05.png" alt="衡序案板产品使用场景渲染" loading="lazy"><figcaption>使用场景 · 备菜与营养管理</figcaption></figure>
+        <figure><img src="../images/balance-board/render-06.png" alt="衡序案板产品结构渲染" loading="lazy"><figcaption>结构展示 · 升降屏与底座</figcaption></figure>
+        <figure><img src="../images/balance-board/render-07.png" alt="衡序案板产品细节视图" loading="lazy"><figcaption>细节视图 · 案板表面与刻度</figcaption></figure>
+        <figure><img src="../images/balance-board/render-08.png" alt="衡序案板产品场景视图" loading="lazy"><figcaption>场景视图 · 智能厨房工作流</figcaption></figure>
+      </div>
+    </section>
+
+    <footer class="footer"><span>衡序案板 · 智能健康案板设计</span><a class="back" href="../index.html">返回作品集 ↑</a></footer>
+  </main>
+</body>
+</html>

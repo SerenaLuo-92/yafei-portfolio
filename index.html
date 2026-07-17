@@ -1,0 +1,330 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="张雅菲｜产品设计师作品集" />
+  <title>张雅菲｜产品设计师作品集 · 产品设计师</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#edf8f6;--ink:#151817;--muted:#6f7b77;--coral:#ff8067;--glass:rgba(255,255,255,.48);--line:rgba(255,255,255,.76);--shadow:0 24px 70px rgba(42,102,92,.11)}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{overflow-x:hidden;color:var(--ink);background:linear-gradient(135deg,#effaf7,#eaf5f7 50%,#f7f1e9);font-family:'Inter','Noto Sans SC',sans-serif}body:before,body:after{content:'';position:fixed;inset:-20%;z-index:-2;pointer-events:none;filter:blur(42px);background:radial-gradient(circle at 10% 20%,rgba(255,184,151,.55),transparent 20%),radial-gradient(circle at 85% 18%,rgba(144,220,240,.5),transparent 23%),radial-gradient(circle at 67% 88%,rgba(188,239,213,.55),transparent 23%);animation:drift 20s ease-in-out infinite alternate}body:after{z-index:-3;opacity:.7;transform:scale(1.1);animation-delay:-6s}
+    .wrap{width:min(1180px,calc(100% - 48px));margin:auto}.glass{background:var(--glass);border:1px solid var(--line);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.72);backdrop-filter:blur(24px) saturate(135%);-webkit-backdrop-filter:blur(24px) saturate(135%)}
+    nav{position:fixed;z-index:10;top:24px;left:50%;transform:translateX(-50%);width:min(1080px,calc(100% - 80px));padding:14px 18px;display:flex;align-items:center;justify-content:space-between;border-radius:18px;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.8);box-shadow:0 14px 42px rgba(42,102,92,.08);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+    .logo{color:var(--ink);font-size:15px;font-weight:800;letter-spacing:-.7px;text-decoration:none}.logo span{color:var(--coral)}.nav-links{display:flex;gap:7px;list-style:none}.nav-links a{padding:7px 12px;border-radius:999px;color:var(--muted);font-size:11px;font-weight:600;text-decoration:none;transition:.25s}.nav-links a:hover{color:#fff;background:var(--ink)}
+    section{padding:18px 0}.hero{padding-top:112px}.hero-panel{padding:76px 72px;border-radius:30px;text-align:center;position:relative;overflow:hidden}.hero-panel:after{content:'';position:absolute;width:580px;height:280px;left:-180px;bottom:-230px;border:1px solid rgba(106,205,187,.35);border-radius:50%;box-shadow:0 0 0 35px rgba(106,205,187,.05),0 0 0 72px rgba(106,205,187,.035);animation:orbit 12s ease-in-out infinite alternate}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.52);color:var(--muted);font-size:10px;font-weight:600}.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--coral)}h1{margin:24px auto 16px;max-width:850px;font-size:clamp(52px,8vw,92px);font-weight:500;line-height:.94;letter-spacing:-5px}h1 em{font-style:normal;color:var(--coral)}.hero-sub{font-size:17px;font-weight:600}.hero-desc{max-width:540px;margin:12px auto 25px;color:var(--muted);font-size:12px;line-height:1.7}.hero-btn{display:inline-flex;gap:12px;align-items:center;padding:12px 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:11px;font-weight:600;text-decoration:none;transition:.25s}.hero-btn:hover{transform:translateY(-2px);background:#333}.hero-btn span{transition:.3s}.hero-btn:hover span{transform:translate(3px,-3px)}
+    .hero-grid{position:relative;z-index:1}.tile-grid{display:grid;grid-template-columns:1.1fr .9fr 1.2fr;gap:13px;margin-top:50px;text-align:left}.tile{position:relative;min-height:250px;padding:20px;overflow:hidden;border-radius:20px;border:1px solid rgba(255,255,255,.78);box-shadow:0 18px 35px rgba(47,102,94,.12),inset 0 1px 0 rgba(255,255,255,.7);backdrop-filter:blur(24px) saturate(145%);-webkit-backdrop-filter:blur(24px) saturate(145%);animation:float 7s ease-in-out infinite}.tile:nth-child(2){animation-delay:-2s}.tile:nth-child(3){animation-delay:-4s}.tile:after{content:'';position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,.4),transparent 40%,rgba(255,255,255,.08));pointer-events:none}.tile:nth-child(1){background:linear-gradient(135deg,rgba(255,146,116,.72),rgba(255,105,96,.46))}.tile:nth-child(2){background:linear-gradient(135deg,rgba(255,255,255,.55),rgba(151,227,203,.48))}.tile:nth-child(3){background:linear-gradient(135deg,rgba(128,213,238,.5),rgba(255,220,154,.46))}.tile>*{position:relative;z-index:1}.tile .num{font-size:10px;font-weight:600;opacity:.72}.tile h2{position:absolute;left:20px;bottom:22px;font-size:30px;line-height:.95;letter-spacing:-1.5px}.tile p{max-width:190px;margin-top:20px;color:rgba(21,24,23,.64);font-size:11px;line-height:1.55}.ring{position:absolute!important;right:-36px;bottom:-50px;width:175px;height:175px;border-radius:50%;background:rgba(255,255,255,.26);box-shadow:inset 0 1px 0 rgba(255,255,255,.4)}.ring:after{content:'';position:absolute;inset:38px;border-radius:50%;background:rgba(255,218,120,.82);box-shadow:0 0 24px rgba(255,239,167,.52)}
+    .ribbon{width:min(1180px,calc(100% - 48px));margin:7px auto;overflow:hidden;border-radius:999px;background:rgba(18,20,20,.78);color:#fff;box-shadow:0 15px 35px rgba(42,102,92,.11);backdrop-filter:blur(18px)}.ribbon-track{display:flex;width:max-content;animation:marquee 24s linear infinite}.ribbon span{padding:11px 32px;white-space:nowrap;font-size:10px;font-weight:600;letter-spacing:1px}
+    .panel{padding:68px 72px;border-radius:30px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:35px}.kicker{color:var(--muted);font-size:10px;font-weight:600;letter-spacing:.5px}.section-title{margin-top:12px;font-size:clamp(54px,8vw,92px);font-weight:500;line-height:.9;letter-spacing:-6px}.section-copy{max-width:340px;color:var(--muted);font-size:13px;line-height:1.7}
+    .work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:13px}.work-card{position:relative;min-height:300px;grid-column:span 6;padding:25px;overflow:hidden;border-radius:20px;border:1px solid rgba(255,255,255,.76);box-shadow:0 18px 40px rgba(48,93,87,.09),inset 0 1px 0 rgba(255,255,255,.64);backdrop-filter:blur(24px) saturate(135%);-webkit-backdrop-filter:blur(24px) saturate(135%);transition:.35s}.work-card:nth-child(1){background:rgba(218,241,234,.48)}.work-card:nth-child(2){background:rgba(20,21,21,.84);color:#fff}.work-card:nth-child(3){background:rgba(255,207,166,.5)}.work-card:nth-child(4){background:rgba(172,224,237,.48)}.work-card:hover{transform:translateY(-6px);box-shadow:0 25px 50px rgba(48,93,87,.15)}.work-card:after{content:'';position:absolute;right:-45px;bottom:-65px;width:180px;height:180px;border:36px solid rgba(255,255,255,.2);border-radius:50%;pointer-events:none}.tag{font-size:10px;font-weight:600;color:var(--muted)}.work-card:nth-child(2) .tag,.work-card:nth-child(2) p{color:rgba(255,255,255,.62)}.work-card h3{margin-top:52px;font-size:38px;font-weight:500;line-height:.95;letter-spacing:-2px}.work-card p{max-width:450px;margin-top:10px;color:var(--muted);font-size:12px;line-height:1.7}.arrow{position:absolute;top:22px;right:22px;z-index:2;display:grid;place-items:center;width:33px;height:33px;border-radius:50%;background:var(--ink);color:#fff;font-size:17px;text-decoration:none;transition:.3s}.work-card:nth-child(2) .arrow,.work-card:nth-child(4) .arrow{background:#fff;color:var(--ink)}.work-card:hover .arrow{transform:rotate(45deg)}
+    .work-card--image{grid-column:span 12;display:grid;grid-template-columns:minmax(280px,.95fr) 1.05fr;gap:28px;align-items:center;min-height:390px;background:rgba(255,255,255,.48)!important}.work-card--image .work-media{grid-column:1;grid-row:1 / span 3;height:330px;overflow:hidden;border-radius:17px;background:rgba(255,255,255,.3);border:1px solid rgba(255,255,255,.76);box-shadow:0 18px 35px rgba(48,93,87,.1)}.work-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}.work-card--image:hover .work-media img{transform:scale(1.04)}.work-card--image .work-image-copy{grid-column:2}.work-card--image .work-image-copy h3{margin-top:15px}.work-card--image .tag{grid-column:2}.work-card--image .arrow{grid-column:2;grid-row:1}
+    .about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:13px}.about-card{min-height:330px;padding:32px;border-radius:20px;border:1px solid rgba(255,255,255,.74);box-shadow:0 18px 40px rgba(48,93,87,.08),inset 0 1px 0 rgba(255,255,255,.62);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}.about-card:first-child{background:rgba(255,255,255,.42)}.about-card p{font-size:14px;line-height:1.9}.about-card p+p{margin-top:15px;color:var(--muted)}.about-card strong{color:var(--coral)}.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.skills span{padding:7px 10px;border:1px solid rgba(100,130,122,.18);border-radius:999px;color:var(--muted);font-size:10px}.quote{display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(135deg,rgba(173,231,243,.5),rgba(209,243,225,.42))}.quote blockquote{font-size:44px;font-weight:500;line-height:1.04;letter-spacing:-2px}.quote cite{color:var(--muted);font-size:10px}
+    footer{width:min(1180px,calc(100% - 48px));margin:18px auto 45px;padding:65px 72px;border-radius:30px;text-align:center}.talk{font-size:clamp(52px,8vw,90px);font-weight:500;letter-spacing:-6px}.talk span{color:var(--coral)}footer p{margin-top:12px;color:var(--muted);font-size:11px}footer a{color:var(--ink);border-bottom:1px solid var(--ink);text-decoration:none}
+    @keyframes drift{from{transform:translate(-2%,-1%) scale(1)}to{transform:translate(3%,3%) scale(1.06)}}@keyframes orbit{from{transform:translate(-20px,10px) rotate(-5deg)}to{transform:translate(45px,-20px) rotate(8deg)}}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -7px}}@keyframes marquee{to{transform:translateX(-50%)}}
+    @media(max-width:820px){.wrap{width:min(100% - 28px,650px)}nav{top:12px;width:calc(100% - 28px)}.hero{padding-top:88px}.hero-panel,.panel{padding:54px 28px;border-radius:22px}.tile-grid{grid-template-columns:1fr 1fr;grid-template-rows:210px 210px}.tile{min-height:210px}.tile:first-child{grid-column:span 2}.section-head{align-items:start;flex-direction:column}.work-grid,.about-grid{grid-template-columns:1fr}.work-card,.work-card--image{grid-column:span 1}.work-card--image{display:block;min-height:0}.work-card--image .work-media{height:260px;margin:28px 0 25px}.work-card--image .work-image-copy{display:block}.work-card--image .tag{display:block}.work-card--image .arrow{top:22px;right:22px}.about-grid{display:grid}footer{width:calc(100% - 28px);padding:54px 28px}}
+    @media(max-width:500px){.nav-links{gap:2px}.nav-links a{padding:6px 8px;font-size:10px}h1{font-size:50px;letter-spacing:-3px}.tile-grid{grid-template-columns:1fr;grid-template-rows:repeat(3,205px)}.tile:first-child{grid-column:auto}.tile{min-height:205px}.section-title{font-size:56px;letter-spacing:-4px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}body:before,body:after,.hero-panel:after,.tile,.ribbon-track{animation:none!important}.work-card:hover{transform:none}}
+      /* Project card layout fix */
+    .work-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .work-card{grid-column:auto!important;min-width:0;}
+    .work-card h3{min-width:0;overflow-wrap:anywhere;word-break:break-word;}
+    .work-card:nth-child(1){background:rgba(249, 192, 5, 0.48)!important;}
+    .work-card:nth-child(2){background:rgba(241, 127, 205, 0.84)!important;color:#fff;}
+    .work-card:nth-child(3){background:rgba(88, 224, 245, 0.591)!important;color:#000000;}
+    .work-card:nth-child(4){background:rgba(173, 175, 175, 0.48)!important;}
+    .work-card:nth-child(5){background:rgba(146, 194, 15, 0.71)!important;}
+    .work-card:nth-child(6){background:rgba(254, 176, 33, 0.68)!important;}
+    .work-card:nth-child(7){background:rgba(245, 193, 176, 0.833)!important;}
+    .work-card:nth-child(8){background:rgba(220,211,245,.5)!important;}
+    .work-card:nth-child(9){background:rgba(190,229,237,.5)!important;}
+    @media(max-width:820px){.work-grid{grid-template-columns:1fr;}.work-card{grid-column:auto!important;}}      .work-card{min-width:0;}
+    .work-card .work-media{height:132px;margin:24px 0 18px;overflow:hidden;border-radius:15px;border:1px solid rgba(255,255,255,.72);background:rgba(255,255,255,.22);box-shadow:0 12px 28px rgba(48,93,87,.08);}
+    .work-card .work-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .55s ease;}
+    .work-card:hover .work-media img{transform:scale(1.05);}
+    .work-card h3{margin-top:18px;font-size:clamp(23px,2.4vw,30px);line-height:1;letter-spacing:-1.1px;}
+    .work-card .work-media img{object-position:center 62%;}
+    @media(max-width:820px){.work-card .work-media{height:180px;}}
+    /* 最后一个项目使用横跨两列的长卡片 */
+    .work-card:nth-child(9){
+      grid-column:1 / -1!important;
+      display:grid;
+      grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);
+      column-gap:32px;
+      align-items:center;
+      min-height:350px;
+    }
+    .work-card:nth-child(9) .work-media{
+      grid-column:1;
+      grid-row:1 / span 3;
+      height:260px;
+      margin:0;
+    }
+    .work-card:nth-child(9) .tag,
+    .work-card:nth-child(9) h3,
+    .work-card:nth-child(9) p{grid-column:2}
+    .work-card:nth-child(9) h3{margin-top:0}
+    .work-card:nth-child(9) .tag{align-self:end}
+    @media(max-width:820px){
+      .work-card:nth-child(9){display:block;min-height:0;}
+      .work-card:nth-child(9) .work-media{height:180px;margin:24px 0 18px;}
+      .work-card:nth-child(9) h3{margin-top:18px;}
+    }
+    .work-media img,.work-card .work-media img{object-fit:cover!important;object-position:center 62%!important;background:transparent;}
+    /* 可旋转的项目球 */
+    .work-grid.project-sphere{
+      position:relative;
+      display:block!important;
+      height:clamp(570px,60vw,760px);
+      margin-top:8px;
+      overflow:hidden;
+      perspective:1400px;
+      perspective-origin:50% 48%;
+      touch-action:none;
+      user-select:none;
+      cursor:grab;
+      isolation:isolate;
+    }
+    .work-grid.project-sphere:before{
+      content:'';
+      position:absolute;
+      left:50%;
+      top:50%;
+      width:min(66%,560px);
+      aspect-ratio:1;
+      transform:translate(-50%,-50%);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:50%;
+      box-shadow:0 0 0 24px rgba(255,255,255,.11),0 0 90px rgba(96,186,183,.18),inset 0 0 70px rgba(255,255,255,.24);
+      background:radial-gradient(circle at 36% 30%,rgba(255,255,255,.45),rgba(255,255,255,.1) 42%,rgba(113,195,191,.08) 70%,transparent 73%);
+      pointer-events:none;
+      z-index:0;
+    }
+    .work-grid.project-sphere:after{
+      content:'拖动旋转 · 点击项目查看';
+      position:absolute;
+      left:50%;
+      bottom:16px;
+      transform:translateX(-50%);
+      color:var(--muted);
+      font-size:10px;
+      letter-spacing:.08em;
+      white-space:nowrap;
+      pointer-events:none;
+      z-index:1;
+    }
+    .work-grid.project-sphere.is-dragging{cursor:grabbing}
+    .work-grid.project-sphere .work-card{
+      position:absolute!important;
+      left:50%;
+      top:50%;
+      display:block!important;
+      width:calc(210px * var(--sphere-size,1));
+      min-height:0!important;
+      height:auto;
+      margin:0;
+      padding:16px;
+      grid-column:auto!important;
+      border-radius:20px;
+      transform-style:preserve-3d;
+      transform-origin:center;
+      will-change:transform,opacity;
+      transition:box-shadow .25s ease,filter .25s ease;
+      z-index:2;
+    }
+    .work-grid.project-sphere .work-card:hover{
+      transform:var(--sphere-transform)!important;
+      box-shadow:0 22px 48px rgba(48,93,87,.2),inset 0 1px 0 rgba(255,255,255,.74);
+    }
+    .work-grid.project-sphere .work-card .work-media{
+      height:calc(104px * var(--sphere-size,1));
+      margin:10px 0 13px;
+      border-radius:14px;
+    }
+    .work-grid.project-sphere .work-card h3{
+      margin-top:0;
+      font-size:clamp(20px,2.15vw,28px);
+      line-height:1;
+      letter-spacing:-1px;
+    }
+    .work-grid.project-sphere .work-card p{
+      margin-top:8px;
+      font-size:10px;
+      line-height:1.55;
+    }
+    .work-grid.project-sphere .work-card .tag{font-size:9px}
+    .work-grid.project-sphere .work-card .arrow{top:14px;right:14px;width:29px;height:29px;font-size:15px}
+    @media(max-width:820px){
+      .work-grid.project-sphere{
+        height:650px;
+        margin-top:0;
+      }
+      .work-grid.project-sphere .work-card{
+        width:calc(172px * var(--sphere-size,1));
+        padding:13px;
+      }
+      .work-grid.project-sphere .work-card .work-media{height:86px}
+      .work-grid.project-sphere .work-card h3{font-size:22px}
+    }
+    @media(max-width:500px){
+      .work-grid.project-sphere{height:620px}
+      .work-grid.project-sphere:before{width:92%}
+      .work-grid.project-sphere .work-card{width:calc(150px * var(--sphere-size,1))}
+      .work-grid.project-sphere .work-card .work-media{height:76px}
+      .work-grid.project-sphere .work-card h3{font-size:19px}
+      .work-grid.project-sphere .work-card p{font-size:9px}
+    }
+  </style>
+</head>
+<body>
+  <nav><a class="logo" href="#home">张雅菲<span>/ Yafei Zhang</span></a><ul class="nav-links"><li><a href="#work">作品</a></li><li><a href="#about">关于</a></li><li><a href="#contact">联系</a></li></ul></nav>
+  <main>
+    <section class="hero" id="home"><div class="wrap"><div class="hero-panel glass"><div class="hero-grid"><div class="eyebrow"><i></i>PORTFOLIO / 2026</div><h1>DESIGN THAT <em>LISTENS</em></h1><p class="hero-sub">设计，倾听真实的声音。</p><p class="hero-desc">产品设计师 · 关注品牌与包容性设计<br />把复杂需求整理成清晰、温暖、可使用的视觉系统。</p><a class="hero-btn" href="#work">查看作品 <span>↗</span></a><div class="tile-grid"><div class="tile"><span class="num">01 / LISTEN</span><h2>把需求<br />放在中心</h2><div class="ring"></div></div><div class="tile"><span class="num">02 / MAKE</span><h2>清晰<br />有用</h2><p>从策略到落地，减少不必要的装饰。</p><strong class="tile-mark">+</strong></div><div class="tile"><span class="num">03 / CARE</span><h2>温暖<br />与疗愈</h2><p>让每一次沟通都更容易被理解。</p><span class="dot-grid"></span></div></div></div></div></div></section>
+    <div class="ribbon" aria-hidden="true"><div class="ribbon-track"><span>BRAND DESIGN · PRODUCT DESIGN · VISUAL STORYTELLING · INCLUSIVE DESIGN · 倾听真实需求 · 让创意自然流动 ·</span><span>BRAND DESIGN · PRODUCT DESIGN · VISUAL STORYTELLING · INCLUSIVE DESIGN · 倾听真实需求 · 让创意自然流动 ·</span></div></div>
+    <section id="work"><div class="wrap panel glass"><div class="section-head"><div><div class="kicker">✦ SELECTED WORKS</div><h2 class="section-title">WORK</h2></div><p class="section-copy">九个项目，五种进入生活的方式。每一件作品都从真实问题开始。</p></div><div class="work-grid">
+      <article class="work-card"><div class="tag">01 / 品牌设计</div><a class="arrow" href="projects/101pet.html" aria-label="查看 101Pet">↗</a><div class="work-media"><img src="images/01images101petcover.png" alt="101Pet 宠物品牌设计" /></div><h3>101Pet</h3><p>从 101% 的热忱拥抱宠物生活方式，构建有温度的情感化宠物品牌。</p></article>
+      <article class="work-card"><div class="tag">02 / 品牌设计</div><a class="arrow" href="projects/first-trace.html" aria-label="查看初迹 FirstTrace">↗</a><div class="work-media"><img src="images/02-first-trace.png" alt="初迹 FirstTrace 母婴品牌设计" /></div><h3>初迹 FirstTrace</h3><p>围绕婴儿翻身期的成长需求，完成产品形态、包装再利用和辅助指南设计。</p></article>
+      <article class="work-card"><div class="tag">03 / 产品设计</div><a class="arrow" href="projects/nature-sound.html" aria-label="查看自然之声">↗</a><div class="work-media"><img src="images/nature-sound/cover.png" alt="自然之声倒流香产品设计" /></div><h3>自然之声</h3><p>自然香氛 × 光影艺术 × 家居美学，让空间回归自然呼吸。</p></article>
+      <article class="work-card"><div class="tag">04 / 产品设计</div><a class="arrow" href="projects/balance-board.html" aria-label="查看衡序案板">↗</a><div class="work-media"><img src="images/balance-board/render-01.png" alt="衡序案板智能健康案板设计" /></div><h3>衡序案板</h3><p>健康烹饪 · 精准控制 · 科学高效，降低日常操作的复杂度。</p></article>
+      <article class="work-card"><div class="tag">05 / 产品设计</div><a class="arrow" href="projects/blind-travel.html" aria-label="查看循途 Blind Travel">↗</a><div class="work-media"><img src="images/blind-travel/cover.png" alt="循途 Blind Travel 智能导盲旅行辅助设备" /></div><h3>循途 Blind Travel</h3><p>为视障人群设计的智能旅行辅助设备，让出行更安心。</p></article>
+      <article class="work-card"><div class="tag">06 / 产品设计</div><a class="arrow" href="projects/egypt-toy.html" aria-label="查看古埃及守护者系列盲盒">↗</a><div class="work-media"><img src="images/06-egypt-guardians-info.jpg" alt="古埃及守护者系列盲盒完整展示" /></div><h3>古埃及守护者系列盲盒</h3><p>潮玩 × 传统工艺 × 萌趣，重新讲述古老文明。</p></article>
+      <article class="work-card"><div class="tag">07 / 产品设计</div><a class="arrow" href="projects/wool-soap.html" aria-label="查看汉魏瓦当羊毛皂">↗</a><div class="work-media"><img src="images/wool-soap/cover.png" alt="羊毛皂手工刺绣产品设计" /></div><h3>汉魏瓦当羊毛皂</h3><p>天然成分 · 温和清洁 · 舒适体验。</p></article>
+      <article class="work-card"><div class="tag">08 / 产品设计</div><a class="arrow" href="projects/pet-toy.html" aria-label="查看宠物互动玩具">↗</a><div class="work-media"><img src="images/pet-toy/cover.png" alt="宠物互动玩具设计主视觉" /></div><h3>宠物互动玩具</h3><p>为宠物和主人创造更多互动乐趣的智能玩具。</p></article>
+      <article class="work-card"><div class="tag">09 / 创意海报</div><a class="arrow" href="projects/nature-landscape.html" aria-label="查看自然之境">↗</a><div class="work-media"><img src="images/09-placeholder.png" alt="自然之境创意海报视觉" /></div><h3>自然之境</h3><p>林深水静 · 秋日山河，用视觉语言传递回归自然的生活哲学。</p></article>
+      </div></div></section>
+  </main>
+  <footer id="contact" class="glass"><div class="talk">LET'S <span>TALK</span></div><p>✦ <a href="2947466559@qq.com">2947466559@qq.com </a> · Thanks</p><p>© 2026 [张雅菲] · 产品设计师</p></footer>
+  <script>
+    (() => {
+      const stage = document.querySelector('.work-grid');
+      if (!stage) return;
+      stage.classList.add('project-sphere');
+      const cards = [...stage.querySelectorAll('.work-card')];
+      const count = cards.length;
+      const points = cards.map((card, i) => {
+        const t = (i + .5) / count;
+        const phi = Math.acos(1 - 2 * t);
+        const theta = Math.PI * (1 + Math.sqrt(5)) * i;
+        const size = [1.04,.94,1.1,.9,1.06,.96,1.08,.93,1.02][i] || 1;
+        card.style.setProperty('--sphere-size', size);
+        card.tabIndex = 0;
+        card.setAttribute('role', 'link');
+        return {
+          x: Math.sin(phi) * Math.cos(theta),
+          y: Math.cos(phi),
+          z: Math.sin(phi) * Math.sin(theta)
+        };
+      });
+      let rotateX = -8;
+      let rotateY = -18;
+      let dragging = false;
+      let moved = false;
+      let lastX = 0;
+      let lastY = 0;
+      let velocityX = 0;
+      let velocityY = 0;
+      let inertiaFrame = 0;
+      const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+      const rotatePoint = (point, radius) => {
+        const x = point.x * radius;
+        const y = point.y * radius;
+        const z = point.z * radius;
+        const yRad = rotateY * Math.PI / 180;
+        const xRad = rotateX * Math.PI / 180;
+        const cy = Math.cos(yRad), sy = Math.sin(yRad);
+        const cx = Math.cos(xRad), sx = Math.sin(xRad);
+        const x1 = x * cy + z * sy;
+        const z1 = -x * sy + z * cy;
+        return {
+          x: x1,
+          y: y * cx - z1 * sx,
+          z: y * sx + z1 * cx
+        };
+      };
+      const render = () => {
+        const radius = Math.min(stage.clientWidth * .34, stage.clientHeight * .37);
+        cards.forEach((card, i) => {
+          const point = rotatePoint(points[i], radius);
+          const depth = (point.z / radius + 1) / 2;
+          const scale = .78 + depth * .22;
+          const transform = `translate(-50%,-50%) translate3d(${point.x.toFixed(1)}px,${point.y.toFixed(1)}px,${point.z.toFixed(1)}px) scale(${scale.toFixed(3)})`;
+          card.style.setProperty('--sphere-transform', transform);
+          card.style.transform = transform;
+          card.style.opacity = (.52 + depth * .48).toFixed(3);
+          card.style.filter = depth < .18 ? 'blur(1.2px)' : 'none';
+          card.style.zIndex = String(Math.round(100 + point.z));
+          card.style.pointerEvents = depth < .08 ? 'none' : 'auto';
+        });
+      };
+      const stopInertia = () => {
+        if (inertiaFrame) cancelAnimationFrame(inertiaFrame);
+        inertiaFrame = 0;
+      };
+      const runInertia = () => {
+        if (dragging || (Math.abs(velocityX) < .01 && Math.abs(velocityY) < .01)) {
+          inertiaFrame = 0;
+          return;
+        }
+        rotateY += velocityX;
+        rotateX = clamp(rotateX + velocityY, -38, 38);
+        velocityX *= .94;
+        velocityY *= .94;
+        render();
+        inertiaFrame = requestAnimationFrame(runInertia);
+      };
+      const beginDrag = (event) => {
+        stopInertia();
+        dragging = true;
+        moved = false;
+        lastX = event.clientX;
+        lastY = event.clientY;
+        stage.classList.add('is-dragging');
+        stage.setPointerCapture?.(event.pointerId);
+      };
+      const drag = (event) => {
+        if (!dragging) return;
+        const dx = event.clientX - lastX;
+        const dy = event.clientY - lastY;
+        if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
+        rotateY += dx * .32;
+        rotateX = clamp(rotateX - dy * .24, -38, 38);
+        velocityX = dx * .22;
+        velocityY = -dy * .16;
+        lastX = event.clientX;
+        lastY = event.clientY;
+        render();
+      };
+      const endDrag = (event) => {
+        if (!dragging) return;
+        dragging = false;
+        stage.classList.remove('is-dragging');
+        stage.releasePointerCapture?.(event.pointerId);
+        if (Math.abs(velocityX) > .01 || Math.abs(velocityY) > .01) {
+          inertiaFrame = requestAnimationFrame(runInertia);
+        }
+      };
+      stage.addEventListener('pointerdown', beginDrag);
+      stage.addEventListener('pointermove', drag);
+      stage.addEventListener('pointerup', endDrag);
+      stage.addEventListener('pointercancel', endDrag);
+      stage.addEventListener('click', (event) => {
+        if (moved || event.target.closest('a')) return;
+        const card = event.target.closest('.work-card');
+        const link = card?.querySelector('.arrow');
+        if (link) window.location.href = link.href;
+      });
+      cards.forEach(card => {
+        card.addEventListener('keydown', event => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            card.querySelector('.arrow')?.click();
+          }
+        });
+      });
+      window.addEventListener('resize', render);
+      render();
+    })();
+  </script>
+</body>
+</html>

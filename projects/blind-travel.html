@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>循途 Blind Travel · 智能旅行辅助设备</title>
+  <style>
+    :root{--ink:#172129;--muted:#697880;--blue:#246f89;--cyan:#62cde4;--orange:#e79555;--glass:rgba(255,255,255,.58)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);font-family:Arial,"Microsoft YaHei",sans-serif;background:radial-gradient(circle at 10% 9%,#dceff0,transparent 30%),radial-gradient(circle at 89% 17%,#f5e2ce,transparent 27%),linear-gradient(135deg,#edf7f6,#e9f2f3 52%,#f7f1e9)}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 20%,rgba(255,255,255,.45),transparent 72%);opacity:.48;animation:flow 14s ease-in-out infinite alternate}
+    @keyframes flow{to{transform:translateX(8%)}}
+    .page{position:relative;width:min(1180px,calc(100% - 36px));margin:auto;padding:34px 0 80px}
+    .back{color:var(--ink);font-size:13px;font-weight:700;text-decoration:none}
+    .glass{border:1px solid rgba(255,255,255,.85);border-radius:30px;background:var(--glass);box-shadow:0 25px 70px rgba(41,88,103,.13),inset 0 1px 0 rgba(255,255,255,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+    .hero{display:grid;grid-template-columns:.84fr 1.16fr;gap:42px;align-items:center;margin-top:30px;padding:42px}
+    .eyebrow,.number{color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    h1{margin:18px 0;font-size:clamp(44px,7vw,82px);font-weight:500;line-height:.9;letter-spacing:-.07em}
+    h1 small{display:block;margin-top:16px;color:var(--blue);font-size:.28em;letter-spacing:.03em}
+    .lead{max-width:430px;color:var(--muted);font-size:15px;line-height:1.9}
+    .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.chip{padding:9px 13px;border:1px solid rgba(36,111,137,.2);border-radius:999px;background:rgba(255,255,255,.48);color:var(--blue);font-size:11px}
+    figure{margin:0;overflow:hidden;border-radius:22px;background:rgba(255,255,255,.58)}figure img{display:block;width:100%;height:auto;object-fit:contain}figcaption{padding:13px 16px;color:var(--muted);font-size:11px}
+    .cover{box-shadow:0 22px 50px rgba(28,70,85,.2)}.cover img{width:100%;height:auto;object-fit:contain}
+    .section{margin-top:28px;padding:34px}.section-head{display:grid;grid-template-columns:155px 1fr;gap:30px;margin-bottom:26px}h2{margin:0;font-size:clamp(28px,4vw,50px);font-weight:500;letter-spacing:-.05em}.section-copy{max-width:740px;margin:11px 0 0;color:var(--muted);font-size:14px;line-height:1.85}
+    .values{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.value{min-height:165px;padding:22px;border-radius:21px;background:rgba(36,111,137,.92);color:#f4fdff}.value b{display:block;margin-bottom:12px;color:#bff4ff;font-size:21px;font-weight:500}.value p{margin:0;font-size:13px;line-height:1.75;opacity:.88}
+    .scene-grid,.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.scene-grid .wide,.gallery .wide{grid-column:1/-1}
+    .boards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .gallery{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .gallery figure{align-self:start}
+    .footer{display:flex;justify-content:space-between;gap:20px;padding:25px 4px 0;color:var(--muted);font-size:11px}
+    @media(max-width:760px){.page{width:min(100% - 22px,1180px);padding-top:24px}.hero{grid-template-columns:1fr;padding:25px;gap:27px}h1{font-size:52px}.section{padding:24px}.section-head{grid-template-columns:1fr;gap:8px}.values,.scene-grid,.boards,.gallery{grid-template-columns:1fr}.scene-grid .wide,.gallery .wide{grid-column:auto}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}body:before{animation:none}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="../index.html">← 返回作品集</a>
+
+    <section class="hero glass">
+      <div>
+        <div class="eyebrow">产品设计 / 无障碍出行 / 2026</div>
+        <h1>循途<small>Blind Travel</small></h1>
+        <p class="lead">面向视障旅行者的智能移动辅助设备，通过环境感知、路线引导、导盲杆联动与语音反馈，帮助使用者更独立、更安心地探索陌生空间。</p>
+        <div class="chips"><span class="chip">智能避障</span><span class="chip">语音导航</span><span class="chip">导盲杆联动</span><span class="chip">无障碍旅行</span></div>
+      </div>
+      <figure class="cover"><img src="../images/blind-travel/cover.png" alt="循途智能导盲设备户外使用场景"></figure>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">01 / Design purpose</div><div><h2>让陌生的路，也可以被安心感知</h2><p class="section-copy">循途不替代白手杖，而是与使用者原有的出行习惯配合。设备负责更远距离的环境扫描与方向提示，导盲杆保留即时触觉反馈，从而建立多层次的安全感。</p></div></div>
+      <div class="values">
+        <article class="value"><b>环境感知</b><p>识别道路边缘、障碍物与行进空间，为路线判断提供提前量。</p></article>
+        <article class="value"><b>方向引导</b><p>通过语音、灯光与导盲杆反馈，让转向信息更直接。</p></article>
+        <article class="value"><b>便携陪伴</b><p>圆润紧凑的移动设备适配室内、街道与旅行场景。</p></article>
+        <article class="value"><b>安全冗余</b><p>智能设备与传统白手杖并行使用，避免单一反馈失效。</p></article>
+      </div>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">02 / Usage scenarios</div><div><h2>从居家准备到城市探索</h2><p class="section-copy">场景图展示设备在室内待机、街道引导、旅行陪伴及日常互动中的状态，强调产品与人的距离感和陪伴属性。</p></div></div>
+      <div class="scene-grid">
+        <figure class="wide"><img src="../images/blind-travel/scene-01.png" alt="循途智能导盲设备城市使用场景" loading="lazy"><figcaption>城市行进 · 避障扫描与路线引导</figcaption></figure>
+        <figure><img src="../images/blind-travel/scene-02.png" alt="循途设备居家场景" loading="lazy"><figcaption>居家待机</figcaption></figure>
+        <figure><img src="../images/blind-travel/scene-03.png" alt="循途设备旅行场景" loading="lazy"><figcaption>旅行陪伴</figcaption></figure>
+        <figure><img src="../images/blind-travel/scene-04.png" alt="循途设备户外场景" loading="lazy"><figcaption>户外探索</figcaption></figure>
+        <figure><img src="../images/blind-travel/scene-05.png" alt="循途设备互动场景" loading="lazy"><figcaption>人机互动</figcaption></figure>
+        <figure><img src="../images/blind-travel/scene-06.png" alt="循途设备生活场景" loading="lazy"><figcaption>日常陪伴</figcaption></figure>
+        <figure><img src="../images/blind-travel/scene-07.png" alt="循途设备细节场景" loading="lazy"><figcaption>产品与空间</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">03 / Design boards</div><div><h2>用户研究、功能系统与产品表达</h2><p class="section-copy">三张展示板完整梳理设计背景、视障出行痛点、功能架构、交互方式与最终产品方案。</p></div></div>
+      <div class="boards">
+        <figure><img src="../images/blind-travel/board-01.png" alt="循途设计展示板一" loading="lazy"><figcaption>设计背景与用户洞察</figcaption></figure>
+        <figure><img src="../images/blind-travel/board-02.png" alt="循途设计展示板二" loading="lazy"><figcaption>功能系统与交互流程</figcaption></figure>
+        <figure><img src="../images/blind-travel/board-03.png" alt="循途设计展示板三" loading="lazy"><figcaption>产品方案与使用场景</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">04 / Product development</div><div><h2>结构、造型与多角度细节</h2><p class="section-copy">从尺寸图、顶视图、侧视图到移动结构和导盲杆连接方式，完整呈现设备的产品开发过程。所有图片均按原始比例显示，不进行裁剪。</p></div></div>
+      <div class="gallery">
+        <figure><img src="../images/blind-travel/render-01.png" alt="循途产品渲染01" loading="lazy"><figcaption>产品渲染 01</figcaption></figure>
+        <figure><img src="../images/blind-travel/render-03.jpg" alt="循途产品渲染03" loading="lazy"><figcaption>产品渲染 02</figcaption></figure>
+        <figure><img src="../images/blind-travel/render-04.png" alt="循途产品渲染04" loading="lazy"><figcaption>产品渲染 03</figcaption></figure>
+        <figure><img src="../images/blind-travel/render-05.jpg" alt="循途产品渲染05" loading="lazy"><figcaption>产品渲染 04</figcaption></figure>
+        <figure><img src="../images/blind-travel/render-07.jpg" alt="循途产品渲染07" loading="lazy"><figcaption>产品渲染 05</figcaption></figure>
+        <figure><img src="../images/blind-travel/render-08.jpg" alt="循途产品渲染08" loading="lazy"><figcaption>产品渲染 06</figcaption></figure>
+        <figure><img src="../images/blind-travel/render-10.png" alt="循途产品渲染10" loading="lazy"><figcaption>产品渲染 07</figcaption></figure>
+        <figure><img src="../images/blind-travel/render-14.png" alt="循途产品渲染14" loading="lazy"><figcaption>产品渲染 08</figcaption></figure>
+      </div>
+    </section>
+
+    <footer class="footer"><span>循途 Blind Travel · 智能旅行辅助设备</span><a class="back" href="../index.html">返回作品集 ↑</a></footer>
+  </main>
+</body>
+</html>

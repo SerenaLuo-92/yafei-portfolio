@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>汉魏瓦当羊毛皂 · 手工刺绣产品设计</title>
+  <style>
+    :root{--ink:#251c19;--muted:#7c6d65;--brown:#6e4636;--red:#9d3d2f;--gold:#c38b42;--cream:#fff8ef;--glass:rgba(255,250,243,.66)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);font-family:Arial,"Microsoft YaHei",sans-serif;background:radial-gradient(circle at 12% 9%,#f6dfc2,transparent 30%),radial-gradient(circle at 87% 15%,#e8e4d2,transparent 28%),linear-gradient(135deg,#fff7ed,#f8eee4 50%,#eef3e9)}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 20%,rgba(255,255,255,.48),transparent 72%);opacity:.52;animation:flow 15s ease-in-out infinite alternate}
+    @keyframes flow{to{transform:translateX(8%)}}
+    .page{position:relative;width:min(1180px,calc(100% - 36px));margin:auto;padding:34px 0 80px}
+    .back{color:var(--ink);font-size:13px;font-weight:700;text-decoration:none}
+    .glass{border:1px solid rgba(255,255,255,.86);border-radius:30px;background:var(--glass);box-shadow:0 25px 70px rgba(111,72,48,.14),inset 0 1px 0 rgba(255,255,255,.9);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+    .hero{display:grid;grid-template-columns:.84fr 1.16fr;gap:42px;align-items:center;margin-top:30px;padding:42px}
+    .eyebrow,.number{color:var(--brown);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    h1{margin:18px 0;font-size:clamp(48px,7vw,88px);font-weight:500;line-height:.9;letter-spacing:-.07em}
+    h1 small{display:block;margin-top:16px;color:var(--brown);font-size:.28em;letter-spacing:.03em}
+    .lead{max-width:430px;color:var(--muted);font-size:15px;line-height:1.9}
+    .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.chip{padding:9px 13px;border:1px solid rgba(157,61,47,.19);border-radius:999px;background:rgba(255,255,255,.5);color:var(--red);font-size:11px}
+    .cover{overflow:hidden;border-radius:22px;box-shadow:0 22px 50px rgba(78,46,31,.2)}.cover img{display:block;width:100%;aspect-ratio:1.52/1;object-fit:cover}
+    .section{margin-top:28px;padding:34px}.section-head{display:grid;grid-template-columns:155px 1fr;gap:30px;margin-bottom:26px}h2{margin:0;font-size:clamp(28px,4vw,50px);font-weight:500;letter-spacing:-.05em}.section-copy{max-width:740px;margin:11px 0 0;color:var(--muted);font-size:14px;line-height:1.85}
+    .values{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.value{min-height:165px;padding:22px;border-radius:21px;background:rgba(157,61,47,.92);color:#fff6e9}.value b{display:block;margin-bottom:12px;color:#ffd79c;font-size:22px;font-weight:500}.value p{margin:0;font-size:13px;line-height:1.75;opacity:.88}
+    figure{margin:0;overflow:hidden;border-radius:22px;background:rgba(255,255,255,.46)}figure img{display:block;width:100%;height:auto}figcaption{padding:13px 16px;color:var(--muted);font-size:11px}
+    .feature{border:1px solid rgba(255,255,255,.75)}.feature img{max-height:930px;object-fit:contain;background:#fff8ef}
+    .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.gallery .wide{grid-column:1/-1}.gallery .wide img{aspect-ratio:1.78/1;object-fit:cover}.gallery figure:not(.wide) img{aspect-ratio:1.33/1;object-fit:cover}
+    .portrait-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.portrait-gallery figure img{aspect-ratio:.75;object-fit:cover}
+    .process-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.process-gallery figure img{aspect-ratio:1.33/1;object-fit:cover}
+    .footer{display:flex;justify-content:space-between;gap:20px;padding:25px 4px 0;color:var(--muted);font-size:11px}
+    @media(max-width:760px){.page{width:min(100% - 22px,1180px);padding-top:24px}.hero{grid-template-columns:1fr;padding:25px;gap:27px}h1{font-size:56px}.section{padding:24px}.section-head{grid-template-columns:1fr;gap:8px}.values,.gallery,.portrait-gallery,.process-gallery{grid-template-columns:1fr}.gallery .wide{grid-column:auto}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}body:before{animation:none}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="../index.html">← 返回作品集</a>
+    <section class="hero glass">
+      <div>
+        <div class="eyebrow">产品设计 / 手工艺品牌 / 2026</div>
+        <h1>羊毛皂<small>Warm Wool, Gentle Care</small></h1>
+        <p class="lead">以羊毛毡包裹手工皂，将传统刺绣纹样、温润触感与天然清洁结合，打造一件可以被使用、被触摸、也值得被珍藏的日常物件。</p>
+        <div class="chips"><span class="chip">天然成分</span><span class="chip">羊毛毡包裹</span><span class="chip">手工刺绣</span><span class="chip">温和清洁</span></div>
+      </div>
+      <figure class="cover"><img src="../images/wool-soap/cover.png" alt="羊毛皂系列主视觉"></figure>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">01 / Brand idea</div><div><h2>把清洁变成一件温柔的手工艺</h2><p class="section-copy">羊毛皂用天然羊毛纤维包裹皂体，洗浴时不需要额外起泡网；外层逐渐毡化，触感从柔软变得更有秩序，也让每一块皂都留下独特的手作痕迹。</p></div></div>
+      <div class="values"><article class="value"><b>温润洁净</b><p>羊毛纤维带来柔和摩擦感，适合日常清洁与手部护理。</p></article><article class="value"><b>手工刺绣</b><p>将花卉、吉祥纹样和东方符号融入表面，形成可识别的系列语言。</p></article><article class="value"><b>自然呵护</b><p>从材料、色彩到包装保持低饱和的自然气质，减少不必要的装饰。</p></article></div>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">02 / Visual system</div><div><h2>系列纹样与色彩</h2><p class="section-copy">以花卉、回纹、面具与文字图形构成系列识别；红、靛蓝、草绿、奶油白和暖黄对应不同香型与情绪。</p></div></div>
+      <div class="gallery">
+        <figure class="wide"><img src="../images/wool-soap/collection.png" alt="羊毛皂系列纹样与色彩集合" loading="lazy"><figcaption>系列集合 · 纹样、配色与产品形态</figcaption></figure>
+        <figure><img src="../images/wool-soap/still-life.png" alt="羊毛皂东方手工艺静物" loading="lazy"><figcaption>东方手工艺语境</figcaption></figure>
+        <figure><img src="../images/wool-soap/hero-detail.png" alt="羊毛皂产品光影主视觉" loading="lazy"><figcaption>温暖光影与材质表现</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">03 / Design board</div><div><h2>从概念到产品展开</h2><p class="section-copy">设计板记录材料选择、纹样方向、产品组合和包装思路，让手工艺语言转化为可执行的产品系统。</p></div></div>
+      <figure class="feature"><img src="../images/wool-soap/board.png" alt="羊毛皂设计展示板" loading="lazy"><figcaption>设计展示板 · 材料、纹样与产品系统</figcaption></figure>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">04 / Details</div><div><h2>针脚、羊毛与皂体细节</h2><p class="section-copy">通过近距离图像展示刺绣针脚、羊毛纤维、边缘包裹和浮雕纹样，强调产品的触觉价值。</p></div></div>
+      <div class="portrait-gallery">
+        <figure><img src="../images/wool-soap/portrait-01.png" alt="羊毛皂细节一" loading="lazy"><figcaption>手工针脚</figcaption></figure>
+        <figure><img src="../images/wool-soap/portrait-02.png" alt="羊毛皂细节二" loading="lazy"><figcaption>纤维包裹</figcaption></figure>
+        <figure><img src="../images/wool-soap/portrait-03.png" alt="羊毛皂细节三" loading="lazy"><figcaption>浮雕纹样</figcaption></figure>
+        <figure><img src="../images/wool-soap/portrait-04.png" alt="羊毛皂细节四" loading="lazy"><figcaption>自然材质</figcaption></figure>
+      </div>
+      <figure style="margin-top:16px"><img src="../images/wool-soap/material.jpg" alt="羊毛皂温润洁净场景" loading="lazy"><figcaption>材料与使用氛围</figcaption></figure>
+    </section>
+
+    <section class="section glass">
+      <div class="section-head"><div class="number">05 / Collection</div><div><h2>完整产品图集</h2><p class="section-copy">以下图片记录系列产品、包装与不同使用情境，可继续作为作品集中的过程档案。</p></div></div>
+      <div class="process-gallery">
+        <figure><img src="../images/wool-soap/photo-01.png" alt="羊毛皂图集05" loading="lazy"><figcaption>展示 01</figcaption></figure>
+        <figure><img src="../images/wool-soap/photo-02.png" alt="羊毛皂图集05" loading="lazy"><figcaption>展示 02</figcaption></figure>
+        <figure><img src="../images/wool-soap/photo-06.jpg" alt="羊毛皂图集05" loading="lazy"><figcaption>展示 03</figcaption></figure>
+        <figure><img src="../images/wool-soap/photo-09.jpg" alt="羊毛皂图集04" loading="lazy"><figcaption>展示 04</figcaption></figure>
+        <figure><img src="../images/wool-soap/photo-07.jpg" alt="羊毛皂图集05" loading="lazy"><figcaption>展示 05</figcaption></figure>
+        <figure><img src="../images/wool-soap/photo-11.jpg" alt="羊毛皂图集05" loading="lazy"><figcaption>展示 06</figcaption></figure>
+        <figure><img src="../images/wool-soap/photo-12.jpg" alt="羊毛皂图集05" loading="lazy"><figcaption>展示 07</figcaption></figure>
+        <figure><img src="../images/wool-soap/photo-13.jpg" alt="羊毛皂图集05" loading="lazy"><figcaption>展示 08</figcaption></figure>
+
+
+
+
+      </div>
+    </section>
+
+    <footer class="footer"><span>羊毛皂 · 手工刺绣产品设计</span><a class="back" href="../index.html">返回作品集 ↑</a></footer>
+  </main>
+</body>
+</html>
